@@ -1,0 +1,112 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "getBtcUsdPrice",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getEthUsdPrice",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getLinkUsdPrice",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"constructor": {
+					"notice": "Network: Sepolia BTC/USD Aggregator: 0x1b44F3514812d835EB1BDB0acB33d3fA3351Ee43 ETH/USD Aggregator: 0x694AA1769357215DE4FAC081bf1f309aDC325306 LINK/USD Aggregator: 0xc59E3633BAAC79493d908e63626716e204A45EdF"
+				},
+				"getBtcUsdPrice()": {
+					"notice": "Returns the latest BTC/USD price."
+				},
+				"getEthUsdPrice()": {
+					"notice": "Returns the latest ETH/USD price."
+				},
+				"getLinkUsdPrice()": {
+					"notice": "Returns the latest SOL/USD price."
+				}
+			},
+			"notice": "If you are reading data feeds on L2 networks, you must check the latest answer from the L2 Sequencer Uptime Feed to ensure that the data is accurate in the event of an L2 sequencer outage. See the https://docs.chain.link/data-feeds/l2-sequencer-feeds page for details.",
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"docs.chain.link/samples/DataFeeds/DataConsumerV3.sol": "DataConsumerV3"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@chainlink/contracts@1.1.1/src/v0.8/shared/interfaces/AggregatorV3Interface.sol": {
+			"keccak256": "0x257a8d28fa83d3d942547c8e129ef465e4b5f3f31171e7be4739a4c98da6b4f0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6d39e11b1dc7b9b8ccdabbc9be442ab7cda4a81c748f57e316dcb1bcb4a28bf9",
+				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
+			]
+		},
+		"docs.chain.link/samples/DataFeeds/DataConsumerV3.sol": {
+			"keccak256": "0x83bee64f6cdbc5452fda8bf688c25eda40846fc6429de1ccf1aa6fe200805b03",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://907ce930ff85bc87e255a2b8b8593e36bc4621a4e557032d96ac5bcfc76886e0",
+				"dweb:/ipfs/QmXBVMq1N5JXpSCF1YSHSd4WMaKjReRUDYcqJ6arnKeAu7"
+			]
+		}
+	},
+	"version": 1
+}
